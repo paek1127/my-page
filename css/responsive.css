@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 태블릿 */
+@media screen and (max-width: 1023px) {
+  #intro #typeStyle{
+    width: 500px;
+  }
+  #about .about_txt ul{
+    font-size: 0.8em;
+    text-align: center;
+  }
+  #skills .skill li{
+    transform: scale(80%);
+  }
+  #skills .skill span:nth-child(2){
+    font-size: 1em;
+  }
+  #portfolio .po_group{
+    width: 80%;
+  }
+  #portfolio div[class*="po_box"]{
+    margin: 10px;
+    width: 230px;
+    height: 230px;
+  }
+  #portfolio .po_group .po_box_bg{
+    top: -10px;
+    left: -10px;
+  }#portfolio .po_group img {
+    width: 200px;
+  }
+  #about .about_txt>li{
+    flex: 0 0 auto;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  #skills canvas {
+    width: 170px;
+  }
+  #skills .skill span:nth-child(2){
+    font-size: 0.8em;
+  }
+  #about .about_txt>li{
+    flex: 0 0 auto;
+  }
+}

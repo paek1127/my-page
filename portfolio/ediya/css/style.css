@@ -1,0 +1,606 @@
+@charset "utf-8";
+*{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+img{
+  border: 0;
+  vertical-align: top;
+}
+
+
+#header{
+  width: 100%;
+}
+#header .header_group{
+  height: 120px;
+}
+#header .header_group .logo{
+  padding-top: 30px;
+  text-align: center;
+}
+#header .header_group .navi{
+  overflow: hidden;
+  width: 900px;
+  margin: 0 auto;
+}
+#header .header_group .navi li{
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+#header .header_group .navi li:hover{
+  cursor: pointer;
+}
+#header .header_group .navi li:hover a{
+  color: blue;
+}
+
+
+#header .banner{
+  height: 600px;
+  background-image: url(../images/IMG_1637542930608.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header .banner .arrow{
+  width: 1884px;
+  margin: 0 auto;
+}
+#header .banner .arrow img{
+  margin-top: 280px;
+  cursor: pointer;
+}
+#header .banner .arrow .next{
+  margin-left: 1830px;
+}
+
+
+#header .banner .indicator{
+  overflow: hidden;
+  width: 126px;
+  margin: 0 auto;
+  padding-top: 235px;
+}
+
+#header .banner .indicator li{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  margin: 0px 4px;
+}
+#header .banner .indicator .blue_button{
+  background-color: #243c84;
+}
+#header .banner .indicator li:hover{
+  cursor: pointer;
+  background-color: #243c84;
+}
+
+
+
+
+
+
+
+
+
+#section{
+  width: 100%;
+  font-family: 'noto sans kr';
+}
+#section .beanist{
+  height: 750px;
+  background-image: url(../images/main_beanist_bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#section .beanist .beanist_title{
+  text-align: center;
+  font-weight: 100;
+  font-size: 30pt;
+  padding-top: 100px;
+  box-sizing: border-box;
+  color: rgb(c8, c8, c8);
+}
+#section .beanist .beanist_title .beanist_bold{
+  font-weight: bold;
+  color: #90470c;
+}
+#section .beanist .beanist_line{
+  border-top: 1px solid black;
+  width: 100px;
+  margin: 60px auto;
+}
+#section .beanist .beanist_sub{
+  font-weight: normal;
+  text-align: center;
+  font-size: 20pt;
+  color: gray;
+}
+#section .beanist .beanist_sub .beanist_subbold{
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+#section .beanist .beanist_sub .beanist_subcolor{
+  color:rgb(44,44,44)
+}
+#section .beanist .beanist_content{
+  overflow: hidden;
+  width: 1276px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#section .beanist .beanist_content li{
+  float: left;
+  margin: 0px 30px;
+}
+#section .beanist .beanist_content li .beanist_txt{
+  text-align: center;
+  margin-top: 20px;
+  color: #cc8e5d;
+}
+#section .beanist .beanist_content li .beanist_txt .bold_color{
+  font-weight: bold;
+  color: #90470c;
+  font-size: 14pt;
+}
+#section .beanist .beanist_indicator{
+  overflow: hidden;
+  width: 54px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+#section .beanist .beanist_indicator li{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  margin: 0px 4px;
+  cursor: pointer;
+}
+#section .beanist .beanist_indicator li:hover{
+  background-color: #90470c;
+}
+#section .beanist .beanist_indicator .brown_button{
+  background-color: #90470c;
+}
+
+
+#section .dream{
+  width: 100%;
+  height: 460px;
+  background-color: #063a7c;
+  /* background-image: url(../images/dream_factory.png);
+  background-repeat: no-repeat;
+  background-position: right bottom; */
+  color: #fff;
+  overflow: hidden;
+
+}
+#section .dream .dream_con{
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 95px;
+  box-sizing: border-box;
+  /* background-color: green; */
+}
+#section .dream .dream_title{
+  margin-top: 5px;
+}
+#section .dream .dream_txt{
+  margin-top: 20px;
+  font-size: 13pt;
+  letter-spacing: -1px;
+}
+#section .dream .dream_box{
+  margin-top: 20px;
+  overflow: hidden;
+}
+#section .dream .dream_box>div{
+  float: left;
+  border: 1px solid #fff;
+  width: 190px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#section .dream .dream_box>div:hover{
+  background-color: #fff;
+  color: black;
+}
+#section .dream .dream_factory img{
+  float: right;
+  margin-right: -140px;
+  margin-top: -270px;
+}
+
+
+
+#section .always{
+  height: 500px;
+  background-image: url(../images/block02_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+#section .always .txt01{
+  color: white;
+  font-size: 30pt;
+  text-align: center;
+}
+#section .always .txt01 .thin{
+  font-weight: normal;
+}
+#section .always .line{
+  width: 100px;
+  margin: 50px auto;
+  border-top:1px solid #fff;
+}
+#section .always .txt02{
+  color: white;
+  font-size: 19pt;
+  font-weight: normal;
+  text-align: center;
+}
+#section .always .show{
+  color: #fff;
+  border: 1px solid #fff;
+  width: 190px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#section .always .show:hover{
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+#section .client{
+  background-image: url(../images/company_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 470px;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+#section .client .client_layout{
+  width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#section .client .client_layout .clien_layout2{
+  float: right;
+}
+#section .client .client_layout .clien_layout2 .txt03{
+  color: white;
+  font-size: 33pt;
+  font-weight: normal;
+}
+#section .client .client_layout .clien_layout2 .txt04{
+  color:#fff;
+  font-size: 13pt;
+  font-weight: normal;
+  margin-top: 50px;
+}
+#section .client .client_layout .clien_layout2 .box{
+  overflow: hidden;
+}
+#section .client .client_layout .clien_layout2 .box>div{
+  float: left;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 190px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 30px;
+  margin-right: 10px;  
+}
+#section .client .client_layout .clien_layout2 .box>div:hover{
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+#section .culture{
+  width: 100%;
+  height: 800px;
+  background-image: url(../images/block03_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 110px;
+  box-sizing: border-box;
+}
+#section .culture .culture_title{
+  color: #fff;
+  font-weight: 1;
+  font-size: 32pt;
+  text-align: center;
+}
+#section .culture .culture_bold{
+  font-weight: bold;
+}
+#section .culture .culture_txt{
+  color: #fff;
+  font-weight: 1;
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 10px;
+}
+#section .culture .culture_line{
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 55px;
+  border-top: 1px solid #1f76e4;
+}
+#section .culture .culture_icon{
+  width: 1900px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(../images/block03_line.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  /* background-color: red; */
+}
+#section .culture .culture_icon p{
+  color: #fff;
+  margin-top: 15px;
+  font-size: 13pt;
+}
+#section .culture .culture_icon li{
+  float: left;
+  width: 350px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+#section .culture .culture_icon li:nth-child(1){
+  margin-top: 100px;
+  margin-left: 450px;
+}
+#section .culture .culture_icon li:nth-child(2){
+  margin-top: 30px;
+  margin-left: -10px;
+}
+#section .culture .culture_icon li:nth-child(3){
+  margin-top: 110px;
+  margin-left: -40px;
+}
+
+#section .coffee{
+  width: 100%;
+  height: 1400px;
+}
+#section .coffee .coffee_title{
+  text-align: center;
+  font-weight: 1;
+  font-size: 32pt;
+  margin-top: 100px;
+}
+#section .coffee .coffee_bold{
+  font-weight: bold;
+}
+#section .coffee .coffee_txt{
+  text-align: center;
+  font-weight: 1;
+  font-size: 18pt;
+  margin-top: 15px;
+}
+#section .coffee .coffee_line{
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-top: 1px solid #1f76e4;
+}
+#section .coffee .coffee_img{
+  width: 1180px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 70px;
+  overflow: hidden;
+}
+#section .coffee .coffee_img li{
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+#section .coffee .coffee_img .coffee_lab{
+  width: 630px;
+  height: 640px;
+  background-image: url(../images/block05_img02.jpg);
+  cursor: pointer;
+}
+#section .coffee .coffee_img .lab_menu{
+  width: 630px;
+  height: 640px;
+  background-image: url(../images/block05_img01.jpg);
+  margin-top: 80px;
+  margin-left: -80px;
+  cursor: pointer;
+}
+#section .coffee .coffee_img .lab_txt{
+  padding-top: 520px;
+  font-size: 15pt;
+  font-weight: bold;
+}
+#section .coffee .coffee_img .lab_line{
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-top: 5px solid #fff;
+}
+#section .customer{
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+#section .customer>div{
+  float: left;
+}
+#section .customer>div .cus_title{
+  color: #fff;
+  font-size: 16pt;
+  margin-top: 43px;
+  margin-left: 35px;
+}
+#section .customer>div .cus_line{
+  width: 40px;
+  border-top: 1px solid #fff;
+  margin: 25px 0;
+  margin-left: 35px;
+}
+#section .customer>div .cus_txt{
+  color: #fff;
+  font-size: 13pt;
+  margin-left: 35px;
+  letter-spacing: -2px;
+}
+#section .customer .customer_box1{
+  width: 330px;
+  height: 330px;
+  background-image: url(../images/main_franchise_bg.jpg);
+  cursor: pointer;  
+}
+#section .customer .customer_box2{
+  width: 330px;
+  height: 330px;
+  background-image: url(../images/main_store_bg.jpg);
+  margin-left: 10px;
+}
+#section .customer .customer_box2 .cus_search{
+  width: 260px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 3px solid #fff;
+  color: #fff;
+  background-color: #1c3269;
+  font-size: 11pt;
+  line-height: 39px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-image: url(../images/main_store_btn.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#section .customer .customer_box3{
+  width: 500px;
+  height: 330px;
+  margin-left: 10px;
+}
+#section .customer .customer_box3 .cus_news{
+  width: 500px;
+  height: 135px;
+  font-size: 16pt;
+  font-weight: bold;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+#section .customer .customer_box3 th{
+  text-align: left;
+  padding-bottom: 10px;
+}
+#section .customer .customer_box3 td{
+  font-size: 11pt;
+  font-weight: 1;
+  font-family: 'noto sans kr';
+}
+#section .customer .customer_box3 tr td:nth-child(1){
+  color: gray;
+  cursor: pointer;
+  font-weight: 500;
+}
+#section .customer .customer_box3 tr td:nth-child(1):hover{
+  color: black;
+}
+#section .customer .customer_box3 tr th:nth-child(2){
+  font-size: 11pt;
+  font-weight: 1;
+  text-align: right;
+  color: gray;
+}
+#section .customer .customer_box3 tr td:nth-child(2){
+  text-align: right;  
+  color: gray;
+
+}
+#section .customer .customer_box3 tr:nth-child(1) td{
+  cursor: pointer;  
+}
+#section .customer .customer_box3 .cus_down{
+  height: 135px;
+  background-color: #cbc3b2;
+  margin-top: 60px;
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 16pt;
+  font-weight: bold;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-image: url(../images/main_brochure_arrow.png);
+  background-repeat: no-repeat;
+  background-position-x: 40px;
+  background-position-y: 60px;
+}
+#section .customer .customer_box3 .cus_down img{
+  margin-left: 90px;
+  margin-top: -55px;
+}
+
+
+
+
+
+#section .sns{
+  width: 1180px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+#section .sns .sns_txt1{
+  text-align: center;
+  font-size: 20pt;
+  color: rgb(49, 49, 49);
+}
+#section .sns .sns_line{
+  width: 50px;
+  margin: 22px auto;
+  border-top: 1px solid black;
+}
+#section .sns .sns_txt2{
+  text-align: center;
+  font-weight: normal;
+  font-size: 17pt;
+  color: gray;
+}
+#section .sns .sns_img{
+  margin-top: 50px;
+  overflow: hidden;
+}
+#section .sns .sns_img li img{
+  width: 234px;
+  float: left;
+  margin: 1px;
+}

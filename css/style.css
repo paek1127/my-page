@@ -1,0 +1,398 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*::selection {
+  background-color: transparent;
+}
+* {
+  user-select: none;
+}
+#loading{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  filter: url('#goo');
+  animation: rotate-move 2s ease-in-out infinite;
+}
+
+.dot { 
+  width: 70px;
+  height: 70px;
+  border-radius: 80%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.dot-3 {
+  background-color: #f74d75;
+  animation: dot-3-move 2s ease infinite;
+}
+
+.dot-2 {
+  background-color: #10beae;
+  animation: dot-2-move 2s ease infinite;
+}
+
+.dot-1 {
+  background-color: #ffe386;
+  animation: dot-1-move 2s ease infinite;
+}
+
+@keyframes dot-3-move {
+  20% {transform: scale(1)}
+  45% {transform: translateY(-18px) scale(.45)}
+  60% {transform: translateY(-40px) scale(.45)}
+  80% {transform: translateY(-40px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-2-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(-16px, 12px) scale(.45)}
+  60% {transform: translate(-40px, 40px) scale(.45)}
+  80% {transform: translate(-40px, 40px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-1-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(16px, 12px) scale(.45)}
+  60% {transform: translate(40px, 40px) scale(.45)}
+  80% {transform: translate(40px, 40px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes rotate-move {
+  55% {transform: rotate(0deg)}
+  80% {transform: rotate(360deg)}
+  100% {transform: rotate(360deg)}
+}
+header {
+  width: 96%;
+  height: 90px;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: 20px;
+  left: 2%;
+  z-index: 2;
+}
+header nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(236, 236, 236, 0.432);
+  box-sizing: border-box;
+  transition: border 0.5s;
+}
+header nav .logo {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgb(236, 236, 236);
+  text-align: center;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+header nav .logo a {
+  display: block;
+  color: rgb(236, 236, 236);
+  transition: all 0.5s;
+}
+header nav .gnb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 35%;
+}
+/* header nav .gnb li {
+  display: inline-block;
+  margin-right: 6em;
+} */
+header nav .gnb li a {
+  font-family: "Poppins", sans-serif;
+  color: rgb(236, 236, 236);
+  transition: all 0.5s;
+}
+header nav .gnb li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: relative;
+  left: 50%;
+  background-color: #6495ED;
+  transition: all 0.5s;
+}
+header nav .gnb li:hover a {
+  color: #6495ED;
+}
+header nav .gnb li:hover a::after {
+  width: 100%;
+  left: 0%;
+}
+header nav .gnb li.on a {
+  color: #6495ED;
+}
+header nav .gnb li.on a::after {
+  width: 100%;
+  left: 0%;
+}
+section {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+section #intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
+  url(../images/sky.jpg) no-repeat fixed center / cover;
+}
+#intro .i_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#intro #typeStyle {
+  width: 980px;
+  font-family: "Poppins", sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 1px #000;
+}
+#about {
+  width: 100%;
+  height: 80vh;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+#about h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 100px;
+}
+#about .about_txt {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  color: rgb(56, 56, 56);
+  text-align: center;
+}
+#about .about_txt>li{
+  flex: 0 0 30%;
+}
+#about .about_txt ul {
+  width: 100%;
+  font-size: 1.2em;
+}
+#about .about_txt img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+#about .about_txt ul > li:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+#skills {
+  width: 100%;
+  height: 80vh;
+  padding: 120px 0px;
+  box-sizing: border-box;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+  url(../images/scott-graham-OQMZwNd3ThU-unsplash.jpg) no-repeat fixed top/ cover;
+}
+#skills h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 100px;
+  color: #fff;
+}
+#skills .skill {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+}
+#skills .skill li {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  border-radius: 50%;
+  display: none;
+}
+#skills .skill span[class*="per"] {
+  display: block;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  line-height: 230px;
+}
+#skills .skill span:nth-child(2) {
+  position: absolute;
+  width: 230px;
+  bottom: -35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.3em;
+}
+#skills canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#portfolio {
+  width: 100%;
+  height: 100%;
+  padding: 120px 0px;
+  box-sizing: border-box;
+}
+#portfolio h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 100px;
+}
+#portfolio .po_group {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+#portfolio div[class*="po_box"] {
+  width: 280px;
+  height: 280px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+#portfolio .po_group a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+#portfolio .po_group img {
+  width: 250px;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#portfolio .po_group p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(69, 69, 124);
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0;
+}
+#portfolio .po_group .po_box_bg {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0;
+}
+#portfolio div[class*="po_box"]:hover .po_box_bg {
+  display: block;
+  opacity: 0.7;
+  transform: scale(1.15);
+}
+#portfolio div[class*="po_box"]:hover p {
+  display: block;
+  opacity: 1;
+}
+footer{
+  width: 100%;
+  height: 8vh;
+  background-color:rgb(43, 43, 43);
+}
+footer p{
+  text-align: center;
+  line-height: 8vh;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+}
+footer .top_btn {
+  color: rgb(53, 53, 53);
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  border: 2px solid rgb(53, 53, 53);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  transition: border 0.3s;
+}
+footer .top_btn:hover{
+  border-color: #6495ED;
+}
+footer .top_btn i{
+  transform: rotate(270deg);
+  transition: color 0.3s;
+}
+footer .top_btn:hover i{
+  color: #6495ED;
+}

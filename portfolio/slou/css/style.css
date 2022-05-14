@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+clearFix::after{
+	display: none;
+	content: "";
+	clear: both;
+}
+
+html, body{
+  width: 100%;
+}
+
+
+.header_group{
+  width: 1890px;
+  height: 60px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 1000;
+}
+.header_group>*{
+  float: left;
+}
+.header_group .logo img{
+  width: 85px;
+  margin-left: 20px;
+}
+
+.header_group .gnb>li{
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  line-height: 65px;
+  margin-left: 20px;
+  position: relative;
+}
+.header_group .gnb .sub{
+  display: none;
+  width: 130px;
+  height: 130px;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: left;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.header_group .gnb .sub li a{
+  color: gray;
+}
+.header_group .gnb>li:nth-child(2) .sub{
+  width: 910px;
+  height: 50px;
+  /* display: block; */
+}
+.header_group .gnb>li:nth-child(2) .sub li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.header_group .gnb:hover>li>a{
+  color: gray;
+}
+.header_group .gnb>li:hover>a{
+  color: black;
+}
+.header_group .gnb .sub>li:hover a{
+  color: black;
+}
+.header_group .login{
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.header_group .login li{
+  display: inline-block;
+  font-size: 11px;
+  padding: 20px 5px;
+}
+.header_group .login li:last-child::before{
+  display: inline-block;
+  content: "|";
+  padding-right: 15px;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
+}
+section .main_visual{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_slide li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+section .main_slide li.active{
+  display: block;
+}
+section .main_slide li:nth-child(1){
+  background: url(../images/25dd49a1-53e2-49b5-95aa-977f6b8fe8f8.jpg) no-repeat center;
+  background-size: cover;
+}
+section .main_slide li:nth-child(2){
+  background: url(../images/e83597c9-fc4a-4293-881a-d6276e4d3e3b.jpg) no-repeat center;
+  background-size: cover;
+}
+section .main_slide li:nth-child(2) h1{
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+  font-size: 45px;
+  font-weight: normal;
+}
+section .main_slide li:nth-child(2) h3{
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  font-size: 18px;
+}
+section .main_slide li:nth-child(3){
+  background: url(../images/58d06278-918d-4b21-846c-fd479455453c.jpg) no-repeat center;
+  background-size: cover;
+}
+section .main_slide li:nth-child(3) h1{
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+  font-size: 45px;
+  font-weight: normal;
+  color: #fff;
+}
+section .main_slide li:nth-child(3) h3{
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  font-size: 18px;
+  color: #fff;
+}
+section .main_slide li:nth-child(4){
+  background: url(../images/4c3b6686-c9fd-44a7-a740-98423f25a902.jpg) no-repeat center;
+  background-size: cover;
+}
+section .main_slide li:nth-child(4) h1{
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+  font-size: 45px;
+  font-weight: normal;
+  color: #fff;
+}
+section .main_slide li:nth-child(4) h3{
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  font-size: 18px;
+  color: #fff;
+}
+section .main_slide li:nth-child(5){
+  background: url(../images/5c5a05ac-60a7-4484-b00f-c673b98aedb5.jpg) no-repeat center;
+  background-size: cover;
+}
+section .main_slide li:nth-child(5) h3{
+  position: absolute;
+  bottom: 135px;
+  left: 100px;
+  font-size: 18px;
+}
+
+section .indicator{
+  position: absolute;
+  bottom: 60px;
+  left: 150px;
+}
+section .indicator li{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: gray;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+}
+section .indicator li.active{
+  background-color: black;
+}
+
+section .slide_btn li{
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  top: 50%;
+  transform: translate(0,-50%);
+  cursor: pointer;
+  /* display: none; */
+}
+section .slide_btn li::selection{
+  background-color: transparent;
+}
+section .slide_btn li:nth-child(1){
+  left: 10px;
+}
+section .slide_btn li:nth-child(2){
+  right: 10px;
+}
