@@ -46,3 +46,47 @@
     flex: 0 0 auto;
   }
 }
+
+
+@media screen and (max-width: 479px) {
+  header nav .gnb{
+    width: 70%;
+  }
+  #intro #typeStyle{
+    width: 240px;
+    font-size: 2.5em;
+  }
+  #about {
+    height: 160vh;
+  }
+  #about h2{
+    margin-bottom: 50px;
+  }
+  #about .about_txt{
+    height: 120vh;
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
+  #skills{
+    height: 100vh;
+  }
+  #skills h2{
+    margin-bottom: 50px;
+  }
+  #skills .skill{
+    width: 90%;
+    height: 60vh;
+    flex-flow: row wrap;
+  }
+  #skills .skill li{
+    width: 180px;
+    height: 180px;
+    flex: 0 0 50%;
+  }
+  #portfolio .po_group{
+    height: 320vh;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
