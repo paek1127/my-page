@@ -2,12 +2,20 @@
 
 /* 태블릿 */
 @media screen and (max-width: 1023px) {
+  section #intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
+  url(../images/sky.jpg) no-repeat center center / cover;
+  }
   #intro #typeStyle{
     width: 500px;
   }
   #about .about_txt ul{
     font-size: 0.8em;
     text-align: center;
+  }
+  #skills{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+  url(../images/scott-graham-OQMZwNd3ThU-unsplash.jpg) no-repeat top/ cover;
   }
   #skills .skill li{
     transform: scale(80%);
@@ -36,6 +44,14 @@
 
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  section #intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
+  url(../images/sky.jpg) no-repeat center center / cover;
+  }
+  #skills{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+  url(../images/scott-graham-OQMZwNd3ThU-unsplash.jpg) no-repeat top/ cover;
+  }
   #skills canvas {
     width: 170px;
   }
@@ -47,10 +63,14 @@
   }
 }
 
-
+/* 모바일 */
 @media screen and (max-width: 479px) {
   header nav .gnb{
     width: 70%;
+  }
+  section #intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
+  url(../images/sky.jpg) no-repeat center center / cover;
   }
   #intro #typeStyle{
     width: 240px;
@@ -69,6 +89,8 @@
   }
   #skills{
     height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+  url(../images/scott-graham-OQMZwNd3ThU-unsplash.jpg) no-repeat top/ cover;
   }
   #skills h2{
     margin-bottom: 50px;
