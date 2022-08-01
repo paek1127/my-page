@@ -1,179 +1,194 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>성현 포트폴리오</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <script defer src="js/jquery-3.6.0.min.js"></script>
-  <script defer src="js/jquery.easypiechart.js"></script>
-  <script defer src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script defer src="https://kit.fontawesome.com/66d6eeb948.js" crossorigin="anonymous"></script>
-  <script defer src="js/script.js"></script>
-</head>
-<body>
-  <div id="loading">
-    <div class="container">
-      <div class="dot dot-1"></div>
-      <div class="dot dot-2"></div>
-      <div class="dot dot-3"></div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
-        </filter>
-      </defs>
-    </svg>
-  </div>
-  <header>
-    <nav>
-      <h1 class="logo"><a href="#">SH</a></h1>
-      <ul class="gnb">
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-    <div id="intro">
-      <div class="i_box">
-        <p id="typeStyle"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성현 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css?ver=1" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/jquery.easypiechart.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/typewriter-effect@latest/dist/core.js"
+    ></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/66d6eeb948.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="container">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+            />
+          </filter>
+        </defs>
+      </svg>
     </div>
-    <div id="about">
-      <h2>ABOUT</h2>
-      <div class="about_content">
-        <ul class="about_txt">
+    <header>
+      <nav>
+        <h1 class="logo"><a href="#">SH</a></h1>
+        <ul class="gnb">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="intro">
+        <div class="i_box">
+          <p id="typeStyle"></p>
+        </div>
+      </div>
+      <div id="about">
+        <h2>ABOUT</h2>
+        <div class="about_content">
+          <ul class="about_txt">
+            <li>
+              <img src="images/profile.png" alt="profile_img" />
+              <ul class="profile">
+                <li>Profile</li>
+                <li>백성현</li>
+                <li>1991. 11. 27</li>
+                <li>010 7708 7549</li>
+                <li>paek1127@naver.com</li>
+              </ul>
+            </li>
+            <li>
+              <img src="images/history.png" alt="history_img" />
+              <ul class="history">
+                <li>History</li>
+                <li>
+                  2021. 10. 20 ~ 2022. 02. 10<br />
+                  이젠컴퓨터학원 디지털웹디자인/웹퍼블리셔<br />
+                  [과정평가형 국가기술자격증 취득]A
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img src="images/license.png" alt="license_img" />
+              <ul class="license">
+                <li>License</li>
+                <li>웹디자인기능사</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="skills">
+        <h2>SKILLS</h2>
+        <ul class="skill">
           <li>
-            <img src="images/profile.png" alt="profile_img">
-            <ul class="profile">
-              <li>Profile</li>
-              <li>백성현</li>
-              <li>1991. 11. 27</li>
-              <li>010 7708 7549</li>
-              <li>paek1127@naver.com</li>
-            </ul>
+            <span class="per1 chart" data-percent="90">90%</span>
+            <span>HTML5</span>
           </li>
           <li>
-            <img src="images/history.png" alt="history_img">
-            <ul class="history">
-              <li>History</li>
-              <li>
-                2021. 10. 20 ~ 2022. 02. 10<br>
-                이젠컴퓨터학원 디지털웹디자인/웹퍼블리셔<br>
-                [과정평가형 국가기술자격증 취득]A
-              </li>
-            </ul>
+            <span class="per2 chart" data-percent="90">90%</span>
+            <span>CSS3</span>
           </li>
           <li>
-            <img src="images/license.png" alt="license_img">
-            <ul class="license">
-              <li>License</li>
-              <li>웹디자인기능사</li>
-            </ul>
+            <span class="per3 chart" data-percent="70">70%</span>
+            <span>Javascript & JQuery</span>
+          </li>
+          <li>
+            <span class="per4 chart" data-percent="70">70%</span>
+            <span>Photoshop & Illustrator</span>
           </li>
         </ul>
       </div>
-    </div>
-    <div id="skills">
-      <h2>SKILLS</h2>
-      <ul class="skill">
-        <li>
-          <span class="per1 chart" data-percent="90">90%</span>
-          <span>HTML5</span>
-        </li>
-        <li>
-          <span class="per2 chart" data-percent="90">90%</span>
-          <span>CSS3</span>
-        </li>
-        <li>
-          <span class="per3 chart" data-percent="70">70%</span>
-          <span>Javascript & JQuery</span>
-        </li>
-        <li>
-          <span class="per4 chart" data-percent="70">70%</span>
-          <span>Photoshop & Illustrator</span>
-        </li>
-      </ul>
-    </div>
-    <div id="portfolio">
-      <h2>PORTFOLIO</h2>
-      <div class="po_group">
-        <div class="po_box1">
-          <a href="portfolio/iosjapan/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/이오스.png" alt="img1">
-            <p>이오스 여행사(리뉴얼)</p>
-          </a>
-        </div>
-        <div class="po_box2">
-          <a href="portfolio/baskin/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/배스킨.png" alt="img2">
-            <p>배스킨라빈스(리뉴얼)</p>
-          </a>
-        </div>
-        <div class="po_box3">
-          <a href="portfolio/nongshim/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/농심.png" alt="img3">
-            <p>농심</p>
-          </a>
-        </div>
-        <div class="po_box4">
-          <a href="portfolio/doubled/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/더블디.png" alt="img5">
-            <p>Double D</p>
-          </a>
-        </div>
-        <div class="po_box5">
-          <a href="portfolio/fursys/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/퍼시스.png" alt="img6">
-            <p>fursys</p>
-          </a>
-        </div>
-        <div class="po_box6">
-          <a href="portfolio/slou/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/슬로우.png" alt="img7">
-            <p>slou</p>
-          </a>
-        </div>
-        <div class="po_box7">
-          <a href="portfolio/ediya/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/이디야.png" alt="img8">
-            <p>이디야</p>
-          </a>
-        </div>
-        <div class="po_box8">
-          <a href="portfolio/16brand/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/16브랜드.png" alt="img9">
-            <p>16BRAND</p>
-          </a>
-        </div>
-        <div class="po_box9">
-          <a href="portfolio/wonderbath/index.html" target="blank">
-            <div class="po_box_bg"></div>
-            <img src="images/16브랜드-원더.png" alt="img10">
-            <p>WONDER BATH</p>
-          </a>
+      <div id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="po_group">
+          <div class="po_box1">
+            <a href="portfolio/iosjapan/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/이오스.png" alt="img1" />
+              <p>이오스 여행사(리뉴얼)</p>
+            </a>
+          </div>
+          <div class="po_box2">
+            <a href="portfolio/baskin/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/배스킨.png" alt="img2" />
+              <p>배스킨라빈스(리뉴얼)</p>
+            </a>
+          </div>
+          <div class="po_box3">
+            <a href="portfolio/nongshim/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/농심.png" alt="img3" />
+              <p>농심</p>
+            </a>
+          </div>
+          <div class="po_box4">
+            <a href="portfolio/doubled/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/더블디.png" alt="img5" />
+              <p>Double D</p>
+            </a>
+          </div>
+          <div class="po_box5">
+            <a href="portfolio/fursys/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/퍼시스.png" alt="img6" />
+              <p>fursys</p>
+            </a>
+          </div>
+          <div class="po_box6">
+            <a href="portfolio/slou/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/슬로우.png" alt="img7" />
+              <p>slou</p>
+            </a>
+          </div>
+          <div class="po_box7">
+            <a href="portfolio/ediya/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/이디야.png" alt="img8" />
+              <p>이디야</p>
+            </a>
+          </div>
+          <div class="po_box8">
+            <a href="portfolio/16brand/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/16브랜드.png" alt="img9" />
+              <p>16BRAND</p>
+            </a>
+          </div>
+          <div class="po_box9">
+            <a href="portfolio/wonderbath/index.html" target="blank">
+              <div class="po_box_bg"></div>
+              <img src="images/16브랜드-원더.png" alt="img10" />
+              <p>WONDER BATH</p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <p>ⓒ 2022. Sunghyun Baek All rights reserved.</p>
-    <div class="top_btn"><i class="fa-solid fa-play"></i></div>
-  </footer>
-</body>
+    </section>
+    <footer>
+      <p>ⓒ 2022. Sunghyun Baek All rights reserved.</p>
+      <div class="top_btn"><i class="fa-solid fa-play"></i></div>
+    </footer>
+  </body>
 </html>
